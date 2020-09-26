@@ -1,0 +1,124 @@
+{
+  "test_register": [
+    {
+      "desc": "输入必填项，注册成功",
+      "phone": "18212345670",
+      "pwd": "123456test",
+      "verifycode": "8888",
+      "phone_code": "666666",
+      "dy_server": "on",
+      "invitephone": "",
+      "status_code": 200,
+      "status": 200,
+      "description": "注册成功"
+    },
+    {
+      "desc": "输入所有选项，注册成功",
+      "phone": "18212345671",
+      "pwd": "123456test",
+      "verifycode": "8888",
+      "phone_code": "666666",
+      "dy_server": "on",
+      "invitephone": "13312345678",
+      "status_code": 200,
+      "status": 200,
+      "description": "注册成功"
+    },
+    {
+      "desc": "输入已注册手机号，注册失败",
+      "phone": "18212345670",
+      "pwd": "123456test",
+      "verifycode": "8888",
+      "phone_code": "666666",
+      "dy_server": "on",
+      "invitephone": "",
+      "status_code": 200,
+      "status": 100,
+      "description": "手机已存在!"
+    },
+    {
+      "desc": "输入密码为空，注册失败",
+      "phone": "18212345672",
+      "pwd": "",
+      "verifycode": "8888",
+      "phone_code": "666666",
+      "dy_server": "on",
+      "invitephone": "",
+      "status_code": 200,
+      "status": 100,
+      "description": "密码不能为空"
+    },
+    {
+      "desc": "输入图片验证码为空，注册失败",
+      "phone": "18212345673",
+      "pwd": "123456test",
+      "verifycode": "",
+      "phone_code": "666666",
+      "dy_server": "on",
+      "invitephone": "",
+      "status_code": 200,
+      "status": 100,
+      "description": "验证码不能为空!"
+    },
+    {
+      "desc": "输入短信验证码为空，注册失败",
+      "phone": "18212345673",
+      "pwd": "123456test",
+      "verifycode": "8888",
+      "phone_code": "",
+      "dy_server": "on",
+      "invitephone": "",
+      "status_code": 200,
+      "status": 100,
+      "description": "短信验证码不能为空"
+    },
+    {
+      "desc": "输入图片验证码错误，注册失败",
+      "phone": "18212345673",
+      "pwd": "123456test",
+      "verifycode": "1111",
+      "phone_code": "666666",
+      "dy_server": "on",
+      "invitephone": "",
+      "status_code": 200,
+      "status": 100,
+      "description": "验证码错误!"
+    },
+    {
+      "desc": "输入短信验证码错误，注册失败",
+      "phone": "18212345673",
+      "pwd": "123456test",
+      "verifycode": "8888",
+      "phone_code": "333333",
+      "dy_server": "on",
+      "invitephone": "",
+      "status_code": 200,
+      "status": 100,
+      "description": "验证码错误"
+    },
+    {
+      "desc": "不同意注册条款时，注册失败",
+      "phone": "18212345673",
+      "pwd": "123456test",
+      "verifycode": "8888",
+      "phone_code": "666666",
+      "dy_server": "off",
+      "invitephone": "",
+      "status_code": 200,
+      "status": 100,
+      "description": "请同意我们的条款"
+    },
+    {
+      "desc": "邀请人手机号错误，注册失败",
+      "phone": "18212345674",
+      "pwd": "123456test",
+      "verifycode": "8888",
+      "phone_code": "666666",
+      "dy_server": "on",
+      "invitephone": "error",
+      "status_code": 200,
+      "status": 100,
+      "description": "推荐人不存在"
+    }
+  ]
+}
